@@ -8,12 +8,16 @@
     <!-- import css: -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet">
     <title>Teaser</title>
 </head>
 
 <body>
     
-    <img id="heart-head"  
+    <img id="heart-head"
+        title="a floaty head"  
         src="assets/niklas-liniger-cs58J0MvILA-unsplash.jpg"
         alt="a heart floating in a clear head, where the brain might be"
     >
@@ -27,9 +31,12 @@
         could happen?
     </p>
 
-    <form id="big-decision" action='thank-you.html' method="get">
+    <form id="choices" action='thank-you.html' method="get">
+        <label for="email">
+            Email
+        </label>
+        <input id="email" name="email" require>
         <button>My body is ready!</button>
-        <button>But I like my brain...</button>
     </form>
 
 </body>
